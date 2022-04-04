@@ -2,11 +2,12 @@ import "./button.css";
 
 import PropTypes from "prop-types";
 import React from "react";
+import { Size } from "./Size.js";
 
 const sizes = {
-  SMALL: "small",
-  MEDIUM: "medium",
-  LARGE: "large",
+  SMALL: Size.SMALL,
+  MEDIUM: Size.MEDIUM,
+  LARGE: Size.LARGE,
 };
 
 /**
