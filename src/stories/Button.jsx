@@ -3,6 +3,12 @@ import "./button.css";
 import PropTypes from "prop-types";
 import React from "react";
 
+const sizes = {
+  SMALL: "small",
+  MEDIUM: "medium",
+  LARGE: "large",
+};
+
 /**
  * Primary UI component for user interaction
  */
@@ -32,7 +38,7 @@ Button.propTypes = {
   /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  size: PropTypes.oneOf(Object.values(sizes)),
   /**
    * Button contents
    */
@@ -46,6 +52,6 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
-  size: "medium",
+  size: sizes.MEDIUM,
   onClick: undefined,
 };
